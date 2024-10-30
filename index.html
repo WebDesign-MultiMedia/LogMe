@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2b46095725.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+   <h1>Log Me!</h1>
+
+   <div class="Logbox">
+    <form>
+        <label for="Date">Date</label>
+        <input type="date" name="Date" id="Date">
+        <label for="Mileage">Mileage</label>
+        <input type="number" name="Mileage" id="Mileage">
+        <label for="Mainenance/Repairs">Mainenance/Repairs</label>
+        <select name="Mainenance/Repairs" id="MainenanceRepairs">
+            <option>Choose...</option>
+            <option value="Maintenance">Maintenance</option>
+            <option value="Repairs">Repairs</option>
+        </select>
+        <label for="Parts">Parts</label>
+        <select name="Parts" id="Parts">
+            <option value="" id="RM">Routine Maintenance</option>
+            <option value="Engine Oil & Filter">Engine Oil & Filter</option>
+            <option value="Tire Rotation">Tire Rotation</option>
+            <option value="Tire Alignment">Tire Alignment</option>
+            <option value="Brake Pads & Rotor">Brake Pads & Rotor</option>
+            <option value="Brake Pads">Brake Pads</option>
+            <option value="Rotors">Rotors</option>
+            <option value="Air Filter">Air Filter</option>
+            <option value="Cabin Air Filter">Cabin Air Filter</option>
+            <option value="Transmission Fluid">Transmission Fluid</option>
+            <option value="Coolant Flush">Coolant Flush</option>
+            <option value="Battery">Battery</option>
+            <option value="Windshield Wipers">Windshield Wipers</option>
+            <option value="Headlights bulb">Headlights bulb</option>            
+            <option value="Taillights bulb">Taillights bulb</option>
+            <!--  -->
+            <option value="" id="MR">Major Repairs</option>
+            <option value="Timing belt/Chain*">Timing belt/Chain*</option>
+            <option value="Water Pump*">Water Pump*</option>
+            <!-- Suspension Repairs -->
+            <option value="Shocks">Shocks</option>
+            <option value="Struts">Struts</option>
+            <option value="Control Arms">Control Arms</option>
+            <option value="Stablizer Links">Stablizer Links</option>
+            <!-- Exhaust System Reairs -->
+            <option value="Mufflers">Mufflers</option>
+            <option value="Catalytic Converter">Catalytic Converter</option>
+            <option value="Pipes">Pipes</option>
+            <!-- Brake System Repairs -->
+            <option value="Calipers">Calipers</option>
+            <option value="Brake Lines">Brake Lines</option>
+            <option value="Master Cylinder">Master Cylinder</option>
+            <!-- Steering Racks/Power Steering System -->
+            <option value="Steering Rack/Power Steering System">Steering Rack/Power Steering System</option>
+            <!-- Fuel System Repairs -->
+            <option value="Fuel Injectors">Fuel Injectors</option>
+            <option value="Fuel Pumps">Fuel Pumps</option>
+            <option value="Filters">Filters</option>
+
+            <option value="AC Compressor">AC Compressor</option>
+            <option value="Heater Core">Heater Core</option>
+
+            <option value="Engine Mounts">Engine Mounts</option>
+            <option value="Alternator">Alternator</option>
+            <option value="Starter">Starter</option>
+        </select>
+        <label for="VehicleSide">Vehicle-side</label>
+        <select name="VehicleSide" id="VehicleSide">
+            <option>Front-Driver</option>
+            <option>Front-Pass</option>
+            <option>Rear-Driver</option>
+            <option>Rear-Pass</option>
+            <option>Front-(Drive|Pass)</option>
+            <option>Rear-(Drive|Pass)</option>
+        </select>
+        <label for="Service_Provider">Service Provider</label>
+        <input type="text" placeholder="Who did it?" name="Service_Provider" id="Service_Provider">
+        <label for="SPLocation">SP-Location</label>
+        <input type="text" placeholder="Address" name="SPLocation" id="SPLocation">
+        <label for="Cost">Cost</label>
+        <input type="text" placeholder="$" name="Cost" id="Cost">
+        <label for="Notes_Issues">Notes/Issues</label>
+        <input type="textarea" placeholder="Notes_Issues" name="Notes_Issues" id="Notes_Issues">
+        <button type="button" id="btn" >Submit</button>
+    </form>
+   </div>
+
+   <div class="Dashboard">
+    <div class="ViewLog">
+        <h3>View Log</h3>
+        <div class="viewBox">
+           <a href="https://docs.google.com/spreadsheets/d/1FPooMdcLWOJo0p1TcQNhE72wvkp-_Ysw3lRYblO0GCQ/edit?usp=sharing"> <i class="fa-sharp fa-solid fa-folder-open"></i></i></a>
+        </div>
+    </div>
+   </div>
+    
+   <script src="app.js"></script>
+</body>
+</html>
