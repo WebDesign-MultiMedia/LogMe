@@ -9,6 +9,12 @@
     /* H1 */
     h1{
         text-align: center;
+          font-family: "Danfo", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "ELSH" 0;
     }
 
     /* Form */
@@ -21,16 +27,23 @@
         display: flex;
         background-color: #C0C0C0;
         flex-direction: column;
-        border: 2px solid red;
-        border-radius: 5%;
+        border: 1px solid black;
+        border-radius: 3%;
         padding: 20px;
         text-align: center;
-        font-size: 1.2em;
-        font-weight: 500;
+        font-size: 1em;
+        filter: drop-shadow(-10px 10px 20px black);
+
+        
+        font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
     }
 
     form input{
-        padding-left: 20px;
+        /* padding-left: 20px; */
+        
     }
 
     form button{
@@ -40,7 +53,7 @@
         width: 50%;
         height: 40px;
         border-radius: 5%;
-        left: 25%;
+        /* left: 25%; */
     }
 
     #MR, #RM{
@@ -52,28 +65,34 @@
         /* View Log */
         .ViewLog{
             position: relative;
-            bottom: 20px;
+            bottom: 0px;
+            padding-left: 20vw;
+            filter: drop-shadow(-10px 10px 20px black);
+            padding-bottom: 100px;
         }
-        .ViewLog h3{
+
+        .viewBox h3{
             position: relative;
-            left: 12vw;
+            bottom: 20px;
         }
 
         .viewBox{
-            background-color: aqua;
-            width: 15vw;
-            height: 15vw;
-            position: relative;
-            left: 15%;
+            background-color: #C0C0C0;
+            border: 2px solid black;
+            width: 20vw;
+            height: 20vw;
+            position: absolute;
+            /* left: 15%; */
             border-radius: 10%;
-            bottom: 10px;
+            top: 5px;
         }
 
         .fa-folder-open{
             position: absolute;
             top: 25px;
-            left: 15px;
-            font-size: 8vw;
+            padding-left: 5vw;
+            /* left: 15px; */
+            font-size: 10vw;
         }
 }
 

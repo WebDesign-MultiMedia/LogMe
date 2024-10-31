@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/2b46095725.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Danfo&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Updock&display=swap" rel="stylesheet">
+   
     <title>Document</title>
 </head>
 <body>
@@ -73,12 +77,15 @@
         </select>
         <label for="VehicleSide">Vehicle-side</label>
         <select name="VehicleSide" id="VehicleSide">
+            <option>Pick a side</option>
             <option>Front-Driver</option>
             <option>Front-Pass</option>
             <option>Rear-Driver</option>
             <option>Rear-Pass</option>
             <option>Front-(Drive|Pass)</option>
             <option>Rear-(Drive|Pass)</option>
+            <option>Engine</option>
+            <option>Transmission</option>
         </select>
         <label for="Service_Provider">Service Provider</label>
         <input type="text" placeholder="Who did it?" name="Service_Provider" id="Service_Provider">
@@ -94,13 +101,21 @@
 
    <div class="Dashboard">
     <div class="ViewLog">
-        <h3>View Log</h3>
         <div class="viewBox">
-           <a href="https://docs.google.com/spreadsheets/d/1FPooMdcLWOJo0p1TcQNhE72wvkp-_Ysw3lRYblO0GCQ/edit?usp=sharing"> <i class="fa-sharp fa-solid fa-folder-open"></i></i></a>
+            <h3>View Log</h3>
+           <a href="https://docs.google.com/spreadsheets/d/1FPooMdcLWOJo0p1TcQNhE72wvkp-_Ysw3lRYblO0GCQ/edit?usp=sharing"> <i class="fa-sharp fa-solid fa-folder-open" id="folder-open"></i></i></a>
         </div>
+    </div>
+   </div>
+
+   <div class="info_Resources">
+    <div>
+
     </div>
    </div>
     
    <script src="app.js"></script>
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </body>
 </html>

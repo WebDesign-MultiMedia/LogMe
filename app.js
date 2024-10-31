@@ -2,13 +2,27 @@
 
 const button = document.getElementById("btn");
 button.addEventListener("mouseenter", t =>{
-         button.style.background = "red";
-         button.style.color = "white";
+
+    if(button.style.color === 'blue'){
+         button.style.color = "red";}
+         else {
+            button.style.color = "blue";}
 })
-button.addEventListener("mouseleave", t =>{
-    button.style.background = "white";
-    button.style.color = "blue";
-});
+// button.addEventListener("mouseleave", t =>{
+//     button.style.background = "white";
+//     button.style.color = "blue";
+// });
+
+const iconFolder = document.getElementById("folder-open");
+iconFolder.addEventListener('mouseenter', ()=>{
+    
+    if(iconFolder.style.color === "blue"){
+        iconFolder.style.color = "red"
+    } else {
+        iconFolder.style.color = "blue"
+    }
+    
+})
 
 
 // LOG TO GOOGLE SPREADSHEET API
@@ -52,4 +66,7 @@ submitBtn.addEventListener("click", ()=>{
     }
 
     gSheets()
+
+
+    swal("Successful Submitted !");
 });
