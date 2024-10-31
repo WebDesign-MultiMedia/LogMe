@@ -24,6 +24,23 @@ iconFolder.addEventListener('mouseenter', ()=>{
     
 })
 
+ const startMyCar = document.getElementById("fuseBx");
+  startMyCar.addEventListener('mouseenter', () =>{
+     if( startMyCar.style.color === "black"){
+        startMyCar.style.color = "blue"
+     }else {
+        startMyCar.style.color = "black"
+     }
+  })
+
+  const CarCareKiosk = document.getElementById("HowVids");
+  CarCareKiosk.addEventListener("mouseenter", () =>{
+    if(CarCareKiosk.style.color === "black"){
+        CarCareKiosk.style.color = "blue";
+    } else{
+        CarCareKiosk.style.color = "black"
+    }
+  })
 
 // LOG TO GOOGLE SPREADSHEET API
 
