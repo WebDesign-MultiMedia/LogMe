@@ -2,12 +2,13 @@
 @media only screen and (max-width: 600px) {
     
     body{
-        background: rgb(197, 35, 35);
+        background: black;
     }
 
 
     /* H1 */
     h1{
+        color: silver;
         text-align: center;
           font-family: "Danfo", serif;
   font-optical-sizing: auto;
@@ -104,50 +105,10 @@
             font-size: 10vw;
         }
 
-        /* Resources */
+   
 
-        .info_Resources{
-        background-color: #C0C0C0;
-        border: 1px solid black;
-        border-radius: 3%;
-        padding: 20px;
-        text-align: center;
-        font-size: 1em;
-        filter: drop-shadow(-10px 10px 20px black);
-        }
 
-        .Resources{
-            display: flex;
-            justify-content: space-evenly;
-            flex-direction: row;
-            padding-bottom: 10px;
-        }
-
-        .StartMyCar{
-            width: 25%;
-            font-size: 4vw;
-
-            font-family: "Playwrite GB S", cursive;
-            font-optical-sizing: auto;
-            font-weight: 400;
-            font-style: normal;
-        }
-         .fa-car-building{
-            font-size: 10vw;
-        }
-        
-        .CarCareKiosk{
-            width: 25%;
-            font-size: 4vw;
-
-            font-family: "Playwrite GB S", cursive;
-            font-optical-sizing: auto;
-            font-weight: 400;
-            font-style: normal;
-        }
-        .fa-photo-film{
-            font-size: 10vw;
-        }
+      
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
