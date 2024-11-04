@@ -1,3 +1,6 @@
+
+
+
 // DOM
 
 const button = document.getElementById("btn");
@@ -8,10 +11,10 @@ button.addEventListener("mouseenter", t =>{
          else {
             button.style.color = "blue";}
 })
-// button.addEventListener("mouseleave", t =>{
-//     button.style.background = "white";
-//     button.style.color = "blue";
-// });
+button.addEventListener("mouseleave", t =>{
+    button.style.background = "white";
+    button.style.color = "blue";
+});
 
 const iconFolder = document.getElementById("folder-open");
 iconFolder.addEventListener('mouseenter', ()=>{
@@ -84,6 +87,6 @@ submitBtn.addEventListener("click", ()=>{
 
     gSheets()
 
-
     swal("Successful Submitted !");
+    
 });

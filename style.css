@@ -10,40 +10,42 @@
     h1{
         color: silver;
         text-align: center;
-          font-family: "Danfo", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "ELSH" 0;
+        position: relative;
+        top: -20vw;
+
+
     }
 
     /* Form */
-    .Logbox{
-        display: flex;
-        justify-content: center;
-    }
+
+ .form-sec{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -10vw;
+ }
 
     form{
-        display: flex;
-        background-color: #C0C0C0;
-        flex-direction: column;
-        border: 1px solid black;
-        border-radius: 3%;
-        padding: 20px;
-        text-align: center;
-        font-size: 1em;
-        filter: drop-shadow(-10px 10px 20px black);
 
-        
-        font-family: "Playwrite GB S", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+        background-color: #C0C0C0;
+        width: 70vw;
+        padding: 20px;
+        border-radius: 5%;
     }
 
-    form input{
-        padding-left: 20px;
+    form label{
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 4vw;
+        padding: 10px;
+
+    }
+
+    form input , select{
+        width: 30vw;
+        height: 5vw;
+        filter: drop-shadow(5px 2px 3px blue);
+        text-align: center;
         
     }
 
@@ -51,6 +53,7 @@
         color: red;
         position: relative;
         top: 10px;
+        margin-left: 60px;
         width: 50%;
         height: 40px;
         border-radius: 5%;
@@ -68,7 +71,7 @@
         /* View Log */
         .ViewLog{
             position: relative;
-            bottom: 0px;
+            bottom: 20px;
             padding-left: 20vw;
             filter: drop-shadow(-10px 10px 20px black);
             padding-bottom: 100px;
@@ -78,12 +81,8 @@
             position: relative;
             bottom: 10px;
             text-align: center;
-            font-size: 3.2vw;
-
-            font-family: "Playwrite GB S", cursive;
-            font-optical-sizing: auto;
-            font-weight: 500;
-            font-style: normal;
+            font-size: 4vw;
+            
         }
 
         .viewBox{
@@ -105,7 +104,33 @@
             font-size: 10vw;
         }
 
+        /* Dashboard */
+
+        .Dashboard{
+            background-color: #C0C0C0;
+            border: 20px solid black;
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+        }
+        .Resources{
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
    
+        .Resources p{
+            color: red;
+            padding: 5px;
+            font-size: 5vw;
+        }
+
+        .Resources .ic{
+            font-size: 8vw;
+        }
+
+
 
 
       

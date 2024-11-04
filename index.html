@@ -4,125 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="style.css"> -->
-    <!-- <script src="https://kit.fontawesome.com/2b46095725.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Danfo&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Updock&display=swap" rel="stylesheet"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
+    <script src="https://kit.fontawesome.com/2b46095725.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
-    <title>Document</title>
+  
+   <link href="https://unpkg.com/survey-core/defaultV2.min.css" type="text/css" rel="stylesheet">
+   <script type="text/javascript" src="https://unpkg.com/survey-core/survey.core.min.js"></script>
+   <script type="text/javascript" src="https://unpkg.com/survey-js-ui/survey-js-ui.min.js"></script>
+   <title>Document</title>
 </head>
 <body>
 
     <div id="fullpage">
         <div class="section ">
 
-            <div class="Logbox">
-                <form>
-                    <div class="form-group p-5 m-1">
-                        <label for="Date" class="text-center form-label">Date</label>
-                        <input type="date" class="form-control text-center" name="Date" id="Date">
-                        <!-- <small class="form-text text-muted text-center">hi</small> -->
-                        <br>
-                        <label for="Mileage" class="form-label">Mileage</label>
-                        <input type="number" name="Mileage" id="Mileage" class="form-control text-center " placeholder="Enter Mileage">
-                        <!-- <small class="form-text text-muted">hi 1</small> -->
-                        <br>
-                        <label for="Mainenance/Repairs" class="form-label">Mainenance/Repairs</label>
-                        <select name="Mainenance/Repairs" id="MainenanceRepairs" class="form-control text-center">
-                            <option>Choose...</option>
-                            <option value="Maintenance">Maintenance</option>
-                            <option value="Repairs">Repairs</option>
-                        </select>
-                        <br>
-                        <label for="Parts" class="form-label">Parts</label>
-                        <select name="Parts" id="Parts" class="form-control text-center">
-                            <option value="" id="RM">**Routine Maintenance**</option>
-                            <option value="Engine Oil & Filter">Engine Oil & Filter</option>
-                            <option value="Tire Rotation">Tire Rotation</option>
-                            <option value="Tire Alignment">Tire Alignment</option>
-                            <option value="Brake Pads & Rotor">Brake Pads & Rotor</option>
-                            <option value="Brake Pads">Brake Pads</option>
-                            <option value="Rotors">Rotors</option>
-                            <option value="Air Filter">Air Filter</option>
-                            <option value="Cabin Air Filter">Cabin Air Filter</option>
-                            <option value="Transmission Fluid">Transmission Fluid</option>
-                            <option value="Coolant Flush">Coolant Flush</option>
-                            <option value="Battery">Battery</option>
-                            <option value="Windshield Wipers">Windshield Wipers</option>
-                            <option value="Headlights bulb">Headlights bulb</option>            
-                            <option value="Taillights bulb">Taillights bulb</option>
-                            <!--  -->
-                            <option value="" id="MR">**Major Repairs**</option>
-                            <option value="Timing belt/Chain*">Timing belt/Chain</option>
-                            <option value="Water Pump*">Water Pump</option>
-                            <option value="Water_Pump_TimingBelt_kit*">Water Pump & Timing Belt Kit</option>
-                            <!-- Suspension Repairs -->
-                            <option value="Shocks">Shocks</option>
-                            <option value="Struts">Struts</option>
-                            <option value="Control Arms">Control Arms</option>
-                            <option value="Stablizer Links">Stablizer Links</option>
-                            <!-- Exhaust System Reairs -->
-                            <option value="Mufflers">Mufflers</option>
-                            <option value="Catalytic Converter">Catalytic Converter</option>
-                            <option value="Pipes">Pipes</option>
-                            <!-- Brake System Repairs -->
-                            <option value="Calipers">Calipers</option>
-                            <option value="Brake Lines">Brake Lines</option>
-                            <option value="Master Cylinder">Master Cylinder</option>
-                            <!-- Steering Racks/Power Steering System -->
-                            <option value="Steering Rack/Power Steering System">Steering Rack/Power Steering System</option>
-                            <!-- Fuel System Repairs -->
-                            <option value="Fuel Injectors">Fuel Injectors</option>
-                            <option value="Fuel Pumps">Fuel Pumps</option>
-                            <option value="Filters">Filters</option>
-                
-                            <option value="AC Compressor">AC Compressor</option>
-                            <option value="Heater Core">Heater Core</option>
-                
-                            <option value="Engine Mounts">Engine Mounts</option>
-                            <option value="Alternator">Alternator</option>
-                            <option value="Starter">Starter</option>
-                        </select>
-                        <br>
-                        <label for="VehicleSide" class="text-center form-label">VehicleSide</label>
-                        <select name="VehicleSide" id="VehicleSide" class="form-control text-center">
-                            <option>Pick a side</option>
-                            <option>Front-Driver</option>
-                            <option>Front-Pass</option>
-                            <option>Rear-Driver</option>
-                            <option>Rear-Pass</option>
-                            <option>Front-(Drive|Pass)</option>
-                            <option>Rear-(Drive|Pass)</option>
-                            <option>Engine</option>
-                            <option>Transmission</option>
-                        </select>
-                        <br>
-                        <label for="Service_Provider" class="form-label">Service Provider</label>
-                        <input type="text" placeholder="Who did it?" name="Service_Provider" id="Service_Provider" class="form-control text-center">
-                        <br>
-                      <label for="SPLocation" class="form-label">SP-Location</label>
-                      <input type="text" placeholder="Address" name="SPLocation" id="SPLocation" class="form-control text-center">
-                        <br>
-                    <label for="Cost" class="form-label">Cost</label>
-                    <input type="number"  name="Cost" id="Cost" class="form-control " value="$" placeholder="$" >
-                        <br>
-                    <label for="Notes_Issues" class="form-label">Notes/Issues</label>
-                    <input type="textarea" placeholder="Notes_Issues" name="Notes_Issues" id="Notes_Issues" class="form-control text-center">
-                        <br>
-                    <button type="button" id="btn" class="" >Submit</button>
-                    </div>
-                </form>
-               </div>
-            
+            <h1>Log Me !</h1>
 
+            <div class="form-sec">
+                
+            <form>
+                <div class="form-group p-5 m-1">
+                    <label for="Date" class="text-center form-label">Date :</label>
+                    <input type="date" class="form-control text-center" name="Date" id="Date">
+                    <!-- <small class="form-text text-muted text-center">hi</small> -->
+                    <br>
+                    <label for="Mileage" class="form-label">Mileage :</label>
+                    <input type="number" name="Mileage" id="Mileage" class="form-control text-center " placeholder="Enter Mileage">
+                    <!-- <small class="form-text text-muted">hi 1</small> -->
+                    <br>
+                    <label for="Mainenance/Repairs" class="form-label">Maint/Rep :</label>
+                    <select name="Mainenance/Repairs" id="MainenanceRepairs" class="form-control text-center">
+                        <option>Choose...</option>
+                        <option value="Maintenance">Maintenance</option>
+                        <option value="Repairs">Repairs</option>
+                    </select>
+                    <br>
+                    <label for="Parts" class="form-label">Parts :</label>
+                    <select name="Parts" id="Parts" class="form-control text-center">
+                        <option value="" id="RM">**Routine Maintenance**</option>
+                        <option value="Engine Oil & Filter">Engine Oil & Filter</option>
+                        <option value="Tire Rotation">Tire Rotation</option>
+                        <option value="Tire Alignment">Tire Alignment</option>
+                        <option value="Brake Pads & Rotor">Brake Pads & Rotor</option>
+                        <option value="Brake Pads">Brake Pads</option>
+                        <option value="Rotors">Rotors</option>
+                        <option value="Air Filter">Air Filter</option>
+                        <option value="Cabin Air Filter">Cabin Air Filter</option>
+                        <option value="Transmission Fluid">Transmission Fluid</option>
+                        <option value="Coolant Flush">Coolant Flush</option>
+                        <option value="Battery">Battery</option>
+                        <option value="Windshield Wipers">Windshield Wipers</option>
+                        <option value="Headlights bulb">Headlights bulb</option>            
+                        <option value="Taillights bulb">Taillights bulb</option>
+                        <!--  -->
+                        <option value="" id="MR">**Major Repairs**</option>
+                        <option value="Timing belt/Chain*">Timing belt/Chain</option>
+                        <option value="Water Pump*">Water Pump</option>
+                        <option value="Water_Pump_TimingBelt_kit*">Water Pump & Timing Belt Kit</option>
+                        <!-- Suspension Repairs -->
+                        <option value="Shocks">Shocks</option>
+                        <option value="Struts">Struts</option>
+                        <option value="Control Arms">Control Arms</option>
+                        <option value="Stablizer Links">Stablizer Links</option>
+                        <!-- Exhaust System Reairs -->
+                        <option value="Mufflers">Mufflers</option>
+                        <option value="Catalytic Converter">Catalytic Converter</option>
+                        <option value="Pipes">Pipes</option>
+                        <!-- Brake System Repairs -->
+                        <option value="Calipers">Calipers</option>
+                        <option value="Brake Lines">Brake Lines</option>
+                        <option value="Master Cylinder">Master Cylinder</option>
+                        <!-- Steering Racks/Power Steering System -->
+                        <option value="Steering Rack/Power Steering System">Steering Rack/Power Steering System</option>
+                        <!-- Fuel System Repairs -->
+                        <option value="Fuel Injectors">Fuel Injectors</option>
+                        <option value="Fuel Pumps">Fuel Pumps</option>
+                        <option value="Filters">Filters</option>
+            
+                        <option value="AC Compressor">AC Compressor</option>
+                        <option value="Heater Core">Heater Core</option>
+            
+                        <option value="Engine Mounts">Engine Mounts</option>
+                        <option value="Alternator">Alternator</option>
+                        <option value="Starter">Starter</option>
+                    </select>
+                    <br>
+                    <label for="VehicleSide" class="text-center form-label">VehicleSide :</label>
+                    <select name="VehicleSide" id="VehicleSide" class="form-control text-center">
+                        <option>Pick a side</option>
+                        <option>Front-Driver</option>
+                        <option>Front-Pass</option>
+                        <option>Rear-Driver</option>
+                        <option>Rear-Pass</option>
+                        <option>Front-(Drive|Pass)</option>
+                        <option>Rear-(Drive|Pass)</option>
+                        <option>Engine</option>
+                        <option>Transmission</option>
+                    </select>
+                    <br>
+                    <label for="Service_Provider" class="form-label">Service Provider :</label>
+                    <input type="text" placeholder="Who did it?" name="Service_Provider" id="Service_Provider" class="form-control text-center">
+                    <br>
+                  <label for="SPLocation" class="form-label">SP-Location :</label>
+                  <input type="text" placeholder="Address" name="SPLocation" id="SPLocation" class="form-control text-center">
+                    <br>
+                <label for="Cost" class="form-label">Cost :</label>
+                <input type="number"  name="Cost" id="Cost" class="form-control " value="$" placeholder="$" >
+                    <br>
+                <label for="Notes_Issues" class="form-label">Notes/Issues :</label>
+                <input type="textarea" placeholder="Notes_Issues" name="Notes_Issues" id="Notes_Issues" class="form-control text-center">
+                    <br>
+                <button type="button" id="btn" class="" >Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="ViewLog">
+            <div class="viewBox">
+                <h3>View Log</h3>
+               <a href="https://docs.google.com/spreadsheets/d/1FPooMdcLWOJo0p1TcQNhE72wvkp-_Ysw3lRYblO0GCQ/edit?usp=sharing"> <i class="fa-sharp fa-solid fa-folder-open" id="folder-open"></i></i></a>
+            </div>
+        </div>
 
 
         </div>
         <div class="section ">Some section</div>
         <div class="section ">Some section</div>
-        <div class="section ">Some section</div>
+        <div class="section ">
+            
+   <div class="Dashboard">
+   <div class="info_Resources">
+    <h3>Self-Thought</h3>
+    <div class="Resources ">
+        <div class="StartMyCar">
+            <p class="text-bg-danger text-center">StartMyCar</p>
+            <i class="fa-solid fa-car-building ic" id="fuseBx"><a href="https://www.startmycar.com/us"></a></i>
+        </div>
+        <div>|</div>
+        <div class="CarCareKiosk">
+            <p>CarCareKiosk</p>
+            <i class="fa-duotone fa-solid fa-photo-film ic" id="HowVids"><a href="https://www.carcarekiosk.com/"></a></i>
+        </div>
+
+
+    </div>
+   </div>
+</div>
+        </div>
     </div>
    <!-- <h1>Log Me!</h1> -->
 
@@ -171,16 +199,15 @@
 
    <!-- <script src="app.js"></script> -->
    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-
+<script src="app.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
    <script>
     new fullpage('#fullpage', {
       autoScrolling: true,
       navigation: true,
       navigationPosition: 'right',
-      navigationTooltips: ['Section 1', 'Section 2', 'Section 3', 'Section 4'],
+      navigationTooltips: ['1', '2', '3', '4'],
       showActiveTooltip: true,
       scrollHorizontally: true,
     });
