@@ -22,26 +22,25 @@
 
             <div class="form-sec">
                 
-            <form>
-                <div class="form-group p-5 m-1">
+            <form id="logMeForm">
+                <div class="">
                     <label for="Date" class="text-center form-label">Date :</label>
-                    <input type="date" class="form-control text-center" name="Date" id="Date">
-                    <!-- <small class="form-text text-muted text-center">hi</small> -->
+                    <input type="date" class="form-control text-center" name="Date" id="Date" required>
                     <br>
                     <label for="Mileage" class="form-label">Mileage :</label>
-                    <input type="number" name="Mileage" id="Mileage" class="form-control text-center " placeholder="Enter Mileage">
+                    <input type="number" name="Mileage" id="Mileage" class="form-control text-center " placeholder="Enter Mileage" required>
                     <!-- <small class="form-text text-muted">hi 1</small> -->
                     <br>
                     <label for="Mainenance/Repairs" class="form-label">Maint/Rep :</label>
-                    <select name="Mainenance/Repairs" id="MainenanceRepairs" class="form-control text-center">
-                        <option>Choose...</option>
+                    <select name="Mainenance/Repairs" id="MainenanceRepairs" class="form-control text-center" required>
+                        <option></option>
                         <option value="Maintenance">Maintenance</option>
                         <option value="Repairs">Repairs</option>
                     </select>
                     <br>
                     <label for="Parts" class="form-label">Parts :</label>
-                    <select name="Parts" id="Parts" class="form-control text-center">
-                        <option value="" id="RM">**Routine Maintenance**</option>
+                    <select name="Parts" id="Parts" class="form-control text-center" required>
+                        <option value="" id="RM"></option>
                         <option value="Engine Oil & Filter">Engine Oil & Filter</option>
                         <option value="Tire Rotation">Tire Rotation</option>
                         <option value="Tire Alignment">Tire Alignment</option>
@@ -90,8 +89,8 @@
                     </select>
                     <br>
                     <label for="VehicleSide" class="text-center form-label">VehicleSide :</label>
-                    <select name="VehicleSide" id="VehicleSide" class="form-control text-center">
-                        <option>Pick a side</option>
+                    <select name="VehicleSide" id="VehicleSide" class="form-control text-center" required>
+                        <option> </option>
                         <option>Front-Driver</option>
                         <option>Front-Pass</option>
                         <option>Rear-Driver</option>
@@ -114,42 +113,49 @@
                 <label for="Notes_Issues" class="form-label">Notes/Issues :</label>
                 <input type="textarea" placeholder="Notes_Issues" name="Notes_Issues" id="Notes_Issues" class="form-control text-center">
                     <br>
-                <button type="button" id="btn" class="" >Submit</button>
+                <button type="submit" id="btn" class="" form="">Submit</button>
                 </div>
             </form>
         </div>
 
         <div class="ViewLog">
             <div class="viewBox">
-                <h3>View Log</h3>
-               <a href="https://docs.google.com/spreadsheets/d/1FPooMdcLWOJo0p1TcQNhE72wvkp-_Ysw3lRYblO0GCQ/edit?usp=sharing"> <i class="fa-sharp fa-solid fa-folder-open" id="folder-open"></i></i></a>
+                <p>View Log</p>
+               <a href="https://docs.google.com/spreadsheets/d/1FPooMdcLWOJo0p1TcQNhE72wvkp-_Ysw3lRYblO0GCQ/edit?usp=sharing" id="aLink">  <i class="fa-solid fa-file-spreadsheet" id="folder-open"></i></a>
             </div>
         </div>
 
 
         </div>
-        <div class="section ">Some section</div>
-        <div class="section ">Some section</div>
+        <!-- <div class="section ">Some section</div>
+        <div class="section ">Some section</div> -->
         <div class="section ">
             
    <div class="Dashboard">
-   <div class="info_Resources">
-    <h3>Self-Thought</h3>
+        <h2>Resource</h2>
     <div class="Resources ">
         <div class="StartMyCar">
-            <p class="text-bg-danger text-center">StartMyCar</p>
-            <i class="fa-solid fa-car-building ic" id="fuseBx"><a href="https://www.startmycar.com/us"></a></i>
+            <i class="fa-regular fa-circle-exclamation" id="info1"></i>
+            <span id="examp">
+                <li>Owner Manuals</li>
+                <li>Service & Repair Manuals</li>
+                <li>Useful Guide</li>
+                <li>Fues Box diagrams</li>
+                <li>Shared Problem Issues</li>
+            </span>
+            <p class="">StartMyCar </p>
+            <a href="https://www.startmycar.com/us"><i class="fa-solid fa-car-building" id="fuseBx"></i></a>
         </div>
-        <div>|</div>
-        <div class="CarCareKiosk">
+        
+        <!-- <div>|</div> -->
+         <div class="CarCareKiosk">
+            <i class="fa-regular fa-circle-exclamation" id="info2"></i>
+            <span id="examp">
+                How-to Car Repair Videos</span>
             <p>CarCareKiosk</p>
-            <i class="fa-duotone fa-solid fa-photo-film ic" id="HowVids"><a href="https://www.carcarekiosk.com/"></a></i>
-        </div>
-
-
-    </div>
+           <a href="https://www.carcarekiosk.com/"><i class="fa-duotone fa-solid fa-photo-film" id="HowVids"></i></a>
+        </div> 
    </div>
-</div>
         </div>
     </div>
    <!-- <h1>Log Me!</h1> -->
@@ -197,10 +203,12 @@
    </div> -->
     
 
-   <!-- <script src="app.js"></script> -->
+   
+   <!-- SweetAlert.js -->
    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-<script src="app.js"></script>
+   <!-- App.js -->
+    <script src="app.js"></script>
+    <!-- FullPage.js -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
    <script>
     new fullpage('#fullpage', {

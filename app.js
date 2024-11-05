@@ -1,6 +1,4 @@
 
-
-
 // DOM
 
 const button = document.getElementById("btn");
@@ -19,10 +17,10 @@ button.addEventListener("mouseleave", t =>{
 const iconFolder = document.getElementById("folder-open");
 iconFolder.addEventListener('mouseenter', ()=>{
     
-    if(iconFolder.style.color === "blue"){
-        iconFolder.style.color = "red"
+    if(iconFolder.style.color === "red"){
+        iconFolder.style.color = "green"
     } else {
-        iconFolder.style.color = "blue"
+        iconFolder.style.color = "red"
     }
     
 })
@@ -45,11 +43,17 @@ iconFolder.addEventListener('mouseenter', ()=>{
     }
   })
 
-// LOG TO GOOGLE SPREADSHEET API
+
+
+
+
+  // LOG TO GOOGLE SPREADSHEET API
 
 
 const submitBtn = document.getElementById("btn");
 submitBtn.addEventListener("click", ()=>{
+   
+    
     async function gSheets() {
         const url = "https://sheetdb.io/api/v1/f85paemez3pqc";
         const data = {
@@ -87,6 +91,19 @@ submitBtn.addEventListener("click", ()=>{
 
     gSheets()
 
-    swal("Successful Submitted !");
+    swal("Successfully Submitted !", "", "success");
     
 });
+
+    const iconExcl = document.getElementById('info1');
+    iconExcl.addEventListener('click', () =>{
+        const bodyExamp = document.getElementById("examp");
+        if (bodyExamp.style.display == "none") {
+            bodyExamp.style.display = "block";
+        } 
+            setTimeout(() => {
+                bodyExamp.style.display = "none";
+            }, 4000);
+    })
+
+ 

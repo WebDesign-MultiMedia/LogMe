@@ -16,6 +16,8 @@
 
     }
 
+    
+
     /* Form */
 
  .form-sec{
@@ -23,38 +25,29 @@
     justify-content: center;
     position: relative;
     top: -10vw;
+    
  }
 
     form{
-
-        background-color: #C0C0C0;
-        width: 70vw;
-        padding: 20px;
-        border-radius: 5%;
+        text-align: right;
+         background-color: #C0C0C0;
+         border-radius: 5%;
+         padding: 16px;
+         height: 15em;
     }
 
     form label{
-        color: black;
+         color: black;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 4vw;
-        padding: 10px;
-
-    }
-
-    form input , select{
-        width: 30vw;
-        height: 5vw;
-        filter: drop-shadow(5px 2px 3px blue);
-        text-align: center;
-        
     }
 
     form button{
         color: red;
         position: relative;
+        margin-right: 90px;
         top: 10px;
-        margin-left: 60px;
-        width: 50%;
+        width: 40%;
         height: 40px;
         border-radius: 5%;
         font-size: 4vw;
@@ -67,48 +60,59 @@
         text-align: center;
     }
 
-    /* Dashboard */
-        /* View Log */
+     /* View Log */
         .ViewLog{
-            position: relative;
+            /* position: relative;
             bottom: 20px;
             padding-left: 20vw;
             filter: drop-shadow(-10px 10px 20px black);
-            padding-bottom: 100px;
+            padding-bottom: 100px; */
+            display: flex;
+            justify-content: center;
+        }
+        h2{
+            color: red;
+            position: absolute;
+            top: 150px;
+        }
+        .viewBox{
+            position: relative;
+            background-color: #c0c0c03b;
+            top: 10px;
+            height: 25vw;
+            width: 25vw;
+            border: 0.1em solid #eee;
+            border-radius: 10%;
+            text-align: center;
         }
 
-        .viewBox h3{
+        .viewBox p{
+            color: white;
             position: relative;
             bottom: 10px;
-            text-align: center;
-            font-size: 4vw;
-            
         }
 
-        .viewBox{
-            background-color: #C0C0C0;
-            border: 2px solid black;
-            width: 20vw;
-            height: 20vw;
+        #folder-open{
             position: absolute;
-            /* left: 15%; */
+            top: 30px;
             border-radius: 10%;
-            top: 5px;
+            /* left: 15px; */
+            font-size: 12vw;
+            color: #02934d;
         }
 
-        .fa-folder-open{
-            position: absolute;
-            top: 25px;
-            padding-left: 5vw;
-            /* left: 15px; */
-            font-size: 10vw;
+        #aLink{
+            display: flex;
+            justify-content: center;
         }
+
+
+
+
 
         /* Dashboard */
 
         .Dashboard{
-            background-color: #C0C0C0;
-            border: 20px solid black;
             display: flex;
             justify-content: center;
             padding: 30px;
@@ -116,18 +120,80 @@
         .Resources{
             display: flex;
             flex-wrap: wrap;
+            justify-content:space-evenly;
             text-align: center;
+            /* background-color: #C0C0C0; */
+            width: 100%;
+            height: 50vw;
+            border-radius: 1%;
         }
 
-   
+/*    
         .Resources p{
-            color: red;
+            color: black;
             padding: 5px;
             font-size: 5vw;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        } */
+
+
+
+        .fa-circle-exclamation{
+            position: absolute;
+            right: 0;
+            margin-right: 10px;
+            color: rgb(210, 210, 45);
+        }
+        .StartMyCar{
+            position: relative;
+            background-color: #c0c0c03b;
+            top: 10px;
+            height: 25vw;
+            width: 25vw;
+            border: 1px solid #eee;
+            border-radius: 10%;
+            color: white
+        }
+        .fa-car-building{
+            color: yellow;
+            font-size: 10vw;
+            position: relative;
+            bottom: 2.5vw;
         }
 
-        .Resources .ic{
-            font-size: 8vw;
+        .CarCareKiosk{
+            position: relative;
+            background-color: #c0c0c03b;
+            top: 10px;
+            height: 25vw;
+            width: 25vw;
+            border: 1px solid #eee;
+            border-radius: 10%;
+            color: white;
+        }
+        .fa-photo-film{
+            color: yellow;
+            font-size: 10vw;
+            position: relative;
+            bottom: 2.5vw;
+        }
+     
+        #examp{
+            background-color: rgba(163, 1, 1, 0.772);
+            position: absolute;
+            width: 100px;
+            height: auto;
+            top: 1px;
+            right: -10px;
+            border-radius: 5%;
+            text-align: left;
+            padding-left: 20px;
+            z-index: 4;
+            display: none;
+        }
+
+        #examp li{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
 
 
