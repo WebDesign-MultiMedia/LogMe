@@ -11,7 +11,6 @@
         color: silver;
         text-align: center;
         position: relative;
-        top: -20vw;
 
 
     }
@@ -24,7 +23,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    top: -10vw;
+    top: 0vw;
     
  }
 
@@ -70,11 +69,7 @@
             display: flex;
             justify-content: center;
         }
-        h2{
-            color: red;
-            position: absolute;
-            top: 150px;
-        }
+        
         .viewBox{
             position: relative;
             background-color: #c0c0c03b;
@@ -116,7 +111,19 @@
             display: flex;
             justify-content: center;
             padding: 30px;
+            position: relative;
+            top: 80vw;
+            padding-bottom: 300px;
+            background-color: rgba(0, 0, 139, 0.153);
         }
+
+        h2{
+            color: white;
+            position: absolute;
+            top: -20px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
         .Resources{
             display: flex;
             flex-wrap: wrap;
@@ -126,6 +133,7 @@
             width: 100%;
             height: 50vw;
             border-radius: 1%;
+            
         }
 
 /*    
@@ -152,7 +160,8 @@
             width: 25vw;
             border: 1px solid #eee;
             border-radius: 10%;
-            color: white
+            color: white;
+            background-color: black;
         }
         .fa-car-building{
             color: yellow;
@@ -170,6 +179,7 @@
             border: 1px solid #eee;
             border-radius: 10%;
             color: white;
+            background-color: black;
         }
         .fa-photo-film{
             color: yellow;
@@ -178,22 +188,28 @@
             bottom: 2.5vw;
         }
      
-        #examp{
-            background-color: rgba(163, 1, 1, 0.772);
+        #examList, #examList2{
+            background-color: darkred;
             position: absolute;
             width: 100px;
             height: auto;
-            top: 1px;
+            top: 20px;
             right: -10px;
             border-radius: 5%;
             text-align: left;
             padding-left: 20px;
             z-index: 4;
+            border: 1px solid white;
             display: none;
         }
 
-        #examp li{
+        #examList #examList2, li{
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            filter: drop-shadow(1px -1px 1px black);
+            list-style: none;
+            font-weight: 500;
+            padding: 6px;
         }
 
 

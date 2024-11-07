@@ -6,11 +6,11 @@
     <!-- <link rel="stylesheet" href="style.css"> -->
     <script src="https://kit.fontawesome.com/2b46095725.js" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css"> -->
   
-   <link href="https://unpkg.com/survey-core/defaultV2.min.css" type="text/css" rel="stylesheet">
+   <!-- <link href="https://unpkg.com/survey-core/defaultV2.min.css" type="text/css" rel="stylesheet">
    <script type="text/javascript" src="https://unpkg.com/survey-core/survey.core.min.js"></script>
-   <script type="text/javascript" src="https://unpkg.com/survey-js-ui/survey-js-ui.min.js"></script>
+   <script type="text/javascript" src="https://unpkg.com/survey-js-ui/survey-js-ui.min.js"></script> -->
    <title>Document</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
     <div id="fullpage">
         <div class="section ">
 
-            <h1>Log Me !</h1>
+            <h1 id="randomMessage"></h1>
 
             <div class="form-sec">
                 
@@ -136,7 +136,7 @@
     <div class="Resources ">
         <div class="StartMyCar">
             <i class="fa-regular fa-circle-exclamation" id="info1"></i>
-            <span id="examp">
+            <span id="examList">
                 <li>Owner Manuals</li>
                 <li>Service & Repair Manuals</li>
                 <li>Useful Guide</li>
@@ -150,58 +150,15 @@
         <!-- <div>|</div> -->
          <div class="CarCareKiosk">
             <i class="fa-regular fa-circle-exclamation" id="info2"></i>
-            <span id="examp">
-                How-to Car Repair Videos</span>
+            <span id="examList2">
+                <li>How-to Videos</li></span>
+                
             <p>CarCareKiosk</p>
            <a href="https://www.carcarekiosk.com/"><i class="fa-duotone fa-solid fa-photo-film" id="HowVids"></i></a>
         </div> 
    </div>
         </div>
     </div>
-   <!-- <h1>Log Me!</h1> -->
-
-
-
-<!-- 
-  
-   <div class="Dashboard">
-    <div class="ViewLog">
-        <div class="viewBox">
-            <h3>View Log</h3>
-           <a href="https://docs.google.com/spreadsheets/d/1FPooMdcLWOJo0p1TcQNhE72wvkp-_Ysw3lRYblO0GCQ/edit?usp=sharing"> <i class="fa-sharp fa-solid fa-folder-open" id="folder-open"></i></i></a>
-        </div>
-    </div>
-   </div>
-
-   <div class="info_Resources d-flex justify-content-center p-3  bg-warning ">
-    <div class="Resources  d-flex flex-column  ">
-        <div class="StartMyCar bg-primary ">
-            <p class="text-bg-danger text-center">StartMyCar</p>
-            <i class="fa-solid fa-car-building p-2 m-1 d-flex justify-content-center  " id="fuseBx"><a href="https://www.startmycar.com/us"></a></i>
-        </div>
-        <div class="CarCareKiosk bg-info">
-            <p>CarCareKiosk</p>
-            <i class="fa-duotone fa-solid fa-photo-film" id="HowVids"><a href="https://www.carcarekiosk.com/"></a></i>
-        </div>
-        <div class="CarCareCouncil bg-danger">
-            <p>CarCareCouncil</p>
-            <i class="fa-duotone fa-solid fa-screwdriver-wrench"><a href="https://www.carcare.org/"></a></i>
-        </div>
-        <div class="CarCareCouncil">
-            <p>CarCareCouncil</p>
-            <i class="fa-duotone fa-solid fa-screwdriver-wrench"><a href="https://www.carcare.org/"></a></i>
-        </div>
-        <div class="CarCareCouncil">
-            <p>CarCareCouncil</p>
-            <i class="fa-duotone fa-solid fa-screwdriver-wrench"><a href="https://www.carcare.org/"></a></i>
-        </div>
-        <div class="CarCareCouncil">
-            <p>CarCareCouncil</p>
-            <i class="fa-duotone fa-solid fa-screwdriver-wrench"><a href="https://www.carcare.org/"></a></i>
-        </div>
-    </div>
-   </div> -->
-    
 
    
    <!-- SweetAlert.js -->
@@ -209,7 +166,7 @@
    <!-- App.js -->
     <script src="app.js"></script>
     <!-- FullPage.js -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
    <script>
     new fullpage('#fullpage', {
       autoScrolling: true,
@@ -217,9 +174,9 @@
       navigationPosition: 'right',
       navigationTooltips: ['1', '2', '3', '4'],
       showActiveTooltip: true,
-      scrollHorizontally: true,
+      scrollHorizontally: false,
     });
-  </script>
+  </script> -->
   
 </body>
 </html>

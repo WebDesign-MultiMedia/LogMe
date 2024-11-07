@@ -25,23 +25,23 @@ iconFolder.addEventListener('mouseenter', ()=>{
     
 })
 
- const startMyCar = document.getElementById("fuseBx");
-  startMyCar.addEventListener('mouseenter', () =>{
-     if( startMyCar.style.color === "black"){
-        startMyCar.style.color = "blue"
-     }else {
-        startMyCar.style.color = "black"
-     }
-  })
+//  const startMyCar = document.getElementById("fuseBx");
+//   startMyCar.addEventListener('mouseenter', () =>{
+//      if( startMyCar.style.color === "black"){
+//         startMyCar.style.color = "blue"
+//      }else {
+//         startMyCar.style.color = "black"
+//      }
+//   })
 
-  const CarCareKiosk = document.getElementById("HowVids");
-  CarCareKiosk.addEventListener("mouseenter", () =>{
-    if(CarCareKiosk.style.color === "black"){
-        CarCareKiosk.style.color = "blue";
-    } else{
-        CarCareKiosk.style.color = "black"
-    }
-  })
+//   const CarCareKiosk = document.getElementById("HowVids");
+//   CarCareKiosk.addEventListener("mouseenter", () =>{
+//     if(CarCareKiosk.style.color === "black"){
+//         CarCareKiosk.style.color = "blue";
+//     } else{
+//         CarCareKiosk.style.color = "black"
+//     }
+//   })
 
 
 
@@ -92,18 +92,58 @@ submitBtn.addEventListener("click", ()=>{
     gSheets()
 
     swal("Successfully Submitted !", "", "success");
+
+    setTimeout(() => {
+       location.reload();
+    }, 3000);
     
 });
 
-    const iconExcl = document.getElementById('info1');
-    iconExcl.addEventListener('click', () =>{
-        const bodyExamp = document.getElementById("examp");
-        if (bodyExamp.style.display == "none") {
-            bodyExamp.style.display = "block";
-        } 
-            setTimeout(() => {
-                bodyExamp.style.display = "none";
-            }, 4000);
-    })
 
+// 
+// RESOURCE SECTION
+// 
+// 
+// 
+
+const infoOne =  document.getElementById("info1");
+
+infoOne.addEventListener('click', ()=>{
+    const exListOne = document.getElementById("examList");
+    const colorChan = document.getElementById("info1");
+
+    if (exListOne.style.display == 'none' && colorChan.style.color == '') {
+        exListOne.style.display = "block"    
+        colorChan.style.color = 'red';    
+    } else {
+        exListOne.style.display = "none"
+        colorChan.style.color = '';
+    }
+
+
+})
+
+const infoTwo = document.getElementById("info2");
+infoTwo.addEventListener('click', ()=>{
+    const exListTwo = document.getElementById("examList2");
+    const colorChanTwo = document.getElementById("info2");
+
+    if (exListTwo.style.display == 'none' && colorChanTwo.style.color == '') {
+        exListTwo.style.display = 'block';
+        colorChanTwo.style.color = 'red';
+    } else {
+        exListTwo.style.display = 'none';
+        colorChanTwo.style.color = '';
+    }
+})
+// 
+// 
+// 
  
+
+// 
+// 
+// 
+// 
+// 
+
