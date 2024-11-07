@@ -19,45 +19,71 @@
 
     /* Form */
 
+    .form-secOne{
+        display: flex;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+    }
+
+    #formLog{
+        background-color: #c0c0c03b;
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 2%;
+
+    }
+
+    #formLog label{
+        color: white;
+    }
+
+    #formLog input{
+        text-align: center;
+    }
+
+    #btn{
+        background-color: #c0c0c03b;
+        color: white;
+        width: 50%;
+        height: 40px;
+        border: 1px solid white;
+        border-radius: 5%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 5vw;
+    }
+
+    input, select{
+        background-color: #c0c0c0;
+        color: blue;
+        text-align: center;
+        width: 70%;
+        position: relative;
+        margin: -10px;
+        margin-top: 1px;
+    }
+
+
+
  .form-sec{
     display: flex;
     justify-content: center;
     position: relative;
     top: 0vw;
-    
+    display: none;
  }
 
-    form{
+    /* form{
         text-align: right;
          background-color: #C0C0C0;
          border-radius: 5%;
          padding: 16px;
          height: 15em;
-    }
+    } */
 
-    form label{
-         color: black;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 4vw;
-    }
-
-    form button{
-        color: red;
-        position: relative;
-        margin-right: 90px;
-        top: 10px;
-        width: 40%;
-        height: 40px;
-        border-radius: 5%;
-        font-size: 4vw;
-        font-weight: 600;
-        /* left: 25%; */
-    }
-
-    #MR, #RM{
-        color: red;
-        text-align: center;
-    }
 
      /* View Log */
         .ViewLog{
