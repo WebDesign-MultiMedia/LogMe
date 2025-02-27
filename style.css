@@ -139,6 +139,7 @@
             border-bottom: black;
             color: black;
             text-decoration: none;
+            list-style-type: none;
         }
     
         form .user-box #Notes_Issues{
