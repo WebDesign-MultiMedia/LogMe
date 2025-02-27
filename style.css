@@ -27,7 +27,6 @@
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 40px;
-        top: 10px;
     }
 
     #logSelect div:nth-of-type(1) {
@@ -63,10 +62,9 @@
 
     
   #formLayer{
-    margin-top: 10px;
     border-radius: 2%;
     width: 70vw;
-    height: 31em;
+    height: 32em;
     position: absolute;
     right: 0;   
     margin-right: 10px;
@@ -77,7 +75,6 @@
   }
 
   #formLayer2{
-    margin-top: 10px;
     width: 70vw;
     height: 21em;
     position: absolute;
@@ -117,8 +114,9 @@
         }
     
         form .user-box label{
-            font-size: 3vh;
+            font-size: 1.1em;
             color: white;
+            font-family:'Courier New', Courier, monospace;
         }
 
         button{
@@ -168,8 +166,8 @@
 
         .Dashboard{
             position: relative;
-            top: 90vh;
-            padding-bottom: 320px;
+            top: 35em;
+            height: 450px;
         }
 
         .Dashboard, h2{
