@@ -16,6 +16,10 @@
 </head>
 <body>
 
+        <div id="logo">
+            <img src="" alt="">
+        </div>
+
         <div class="section">
             <div id="logSelect">
                     <div class="nav-box">
@@ -102,7 +106,7 @@
                     </div>
                     <div class="user-box">
                         <label for="VehicleSide">Vehicle Side</label>
-                    <select name="VehicleSide" id="VehicleSide" class="form-control text-center" >
+                    <select name="VehicleSide" id="VehicleSide"  >
                         <option> </option>
                         <option>Front-Driver</option>
                         <option>Front-Pass</option>
@@ -116,19 +120,19 @@
                     </div>
                     <div class="user-box">
                     <label for="Service_Provider">Service</label>
-                    <input type="text" id="Service_Provider" name="Service_Provider">
+                    <input type="text" id="Service_Provider" name="Service_Provider" placeholder="Who did the job ?">
                     </div>
                     <div class="user-box">
                     <label for="SPLocation">Service Location</label>
-                    <input type="text" placeholder="" id="SPLocation" name="SPLocation">
+                    <input type="text" placeholder="Address" id="SPLocation" name="SPLocation" >
                     </div>
                     <div class="user-box">
                     <label for="Cost">Labor</label>
-                    <input type="number" name="Cost" id="Cost">
+                    <input type="number" name="Cost" id="Cost" placeholder="Price $">
                     </div>
                     <div class="user-box">
                     <label for="Notes_Issues">Notes/Issues</label>
-                    <input type="text" id="Notes_Issues" name="Cost">
+                    <input type="text" id="Notes_Issues" name="Cost" placeholder="Issues/ Concerns/ Reminders">
                     </div>
                     <button type="submit" id="btn" class="" form="">Submit</button>                    
                 </form>
@@ -143,23 +147,23 @@
                     </div>
                     <div class="user-box">
                         <label for="Parts Name">Parts Name</label>
-                        <input type="text" name="Parts_Name" id="Parts_Name">
+                        <input type="text" name="Parts_Name" id="Parts_Name" placeholder="Name of Car Parts">
                     </div>
                     <div class="user-box">
                         <label for="Parts Location">Part Location</label>
-                        <input type="" name="Parts_Location" id="Parts_Location">
+                        <input type="" name="Parts_Location" id="Parts_Location" placeholder="Which side of the car?">
                     </div>
                     <div class="user-box">
                         <label for="PartsBrand">Parts Brand</label>
-                        <input type="text" name="Parts_Brand" id="Parts_Brand">
+                        <input type="text" name="Parts_Brand" id="Parts_Brand" placeholder="Brand of the Parts">
                     </div>
                     <div class="user-box">
                         <label for="Price">Price</label>
-                        <input type="number" name="Price" id="Price">
+                        <input type="number" name="Price" id="Price" placeholder="How much was the parts ?">
                     </div>
                     <div class="user-box">
                         <label for="Purchased">Webiste/Place Obtained</label>
-                        <input type="text" name="Purchased" id="Purchased">
+                        <input type="text" name="Purchased" id="Purchased" placeholder="Bought online or shop ?">
                     </div>
                     <button type="submit" id="btnParts" class="" form="">Submit</button>                    
                 </form>
@@ -364,6 +368,10 @@
             <div id="viewBox">
                 <div id="mediaOp">
                     <a href="https://docs.google.com/spreadsheets/d/1FPooMdcLWOJo0p1TcQNhE72wvkp-_Ysw3lRYblO0GCQ/edit?usp=sharing" id="gSheetLog">  <i class="fa-solid fa-file-spreadsheet"></i></a>
+                    <!-- <a href="https://docs.google.com/spreadsheets/d/1FPooMdcLWOJo0p1TcQNhE72wvkp-_Ysw3lRYblO0GCQ/edit?gid=615213625#gid=615213625" id="gSheetLog">  <i class="fa-solid fa-file-spreadsheet"></i></a> -->
+                </div> 
+                <div id="mediaOp">
+                    <a href="https://docs.google.com/spreadsheets/d/1FPooMdcLWOJo0p1TcQNhE72wvkp-_Ysw3lRYblO0GCQ/edit?gid=615213625#gid=615213625" id="gSheetLog"> <i class="fa-duotone fa-solid fa-car-wrench"></i></a>
                 </div>             
             </div>
         </div>
@@ -382,7 +390,7 @@
 
             </div>
             <div id="carIfo" >
-                <h2>StartMyCar Guide</h2>
+                <h2>StartMyCar</h2>
                 <a href="https://www.startmycar.com/us"><i class="fa-duotone fa-solid fa-tire-flat " id="linkIcon"></i></a>
 
             </div>
