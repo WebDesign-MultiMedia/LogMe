@@ -1,47 +1,33 @@
 
-// DOM
+// FORM & LOGS
 
-const button = document.getElementById("btn");
-button.addEventListener("mouseenter", t =>{
+let carOp = document.querySelectorAll("p");
+ carOp.forEach(el => {
+    el.style.fontSize = '1.5em'
+    el.style.textAlign = 'center'
+ });
 
-    if(button.style.color === 'blue'){
-         button.style.color = "red";}
-         else {
-            button.style.color = "blue";}
-})
-button.addEventListener("mouseleave", t =>{
-    button.style.background = "white";
-    button.style.color = "blue";
-});
 
-const iconFolder = document.getElementById("folder-open");
-iconFolder.addEventListener('mouseenter', ()=>{
-    
-    if(iconFolder.style.color === "red"){
-        iconFolder.style.color = "green"
-    } else {
-        iconFolder.style.color = "red"
-    }
-    
-})
+ let carOption = document.getElementById('carOp');
+ let partsOption = document.getElementById('partOp');
 
-//  const startMyCar = document.getElementById("fuseBx");
-//   startMyCar.addEventListener('mouseenter', () =>{
-//      if( startMyCar.style.color === "black"){
-//         startMyCar.style.color = "blue"
-//      }else {
-//         startMyCar.style.color = "black"
-//      }
-//   })
+ let formCarLog = document.getElementById('formLayer')
+ let formPartsLog = document.getElementById('formLayer2')
 
-//   const CarCareKiosk = document.getElementById("HowVids");
-//   CarCareKiosk.addEventListener("mouseenter", () =>{
-//     if(CarCareKiosk.style.color === "black"){
-//         CarCareKiosk.style.color = "blue";
-//     } else{
-//         CarCareKiosk.style.color = "black"
-//     }
-//   })
+ partsOption.addEventListener('click', () =>{
+        formCarLog.style.display = 'none';
+        formPartsLog.style.display = 'block';
+        formPartsLog.style.position = 'absolute';
+        formPartsLog.style.zIndex= '1';
+
+ })
+
+ carOption.addEventListener('click', () =>{
+        formPartsLog.style.display = 'none';
+        formCarLog.style.display = 'block';
+        formCarLog.style.zIndex= '1';
+
+ })
 
 
 
@@ -52,8 +38,7 @@ iconFolder.addEventListener('mouseenter', ()=>{
 
 const submitBtn = document.getElementById("btn");
 submitBtn.addEventListener("click", ()=>{
-   
-    
+      
     async function gSheets() {
         const url = "https://sheetdb.io/api/v1/f85paemez3pqc";
         const data = {
@@ -65,13 +50,12 @@ submitBtn.addEventListener("click", ()=>{
             Service_Provider : document.getElementById("Service_Provider").value,
             SPLocation : document.getElementById("SPLocation").value ,
             Cost : document.getElementById("Cost").value,
-            Notes_Issues : document.getElementById("Notes_Issues").value 
+            Notes_Issues : document.getElementById("Notes_Issues").value,
         }
     
         try{
             const res = await fetch(url,{
                 method: "POST",
-                // mode: "no-cors",
                 body: JSON.stringify(data),
                 headers:{
                     "Content-Type" : "application/json",
@@ -91,7 +75,7 @@ submitBtn.addEventListener("click", ()=>{
 
     gSheets()
 
-    swal("Successfully Submitted !", "", "success");
+    swal("Successfully Submitted !", "", "logging....");
 
     setTimeout(() => {
        location.reload();
@@ -100,50 +84,43 @@ submitBtn.addEventListener("click", ()=>{
 });
 
 
-// 
-// RESOURCE SECTION
-// 
-// 
-// 
+ let partsBtn = document.getElementById('btnParts');
 
-const infoOne =  document.getElementById("info1");
+ partsBtn.addEventListener('click', () =>{
+    async function logToGSheets() {
+        const urlParts = "https://sheetdb.io/api/v1/f85paemez3pqc?sheet=Sheet2";
+        const dataParts = {
+            Date_Purchased : document.getElementById("Date_Purchased").value,
+            Parts_Name : document.getElementById("Parts_Name").value,
+            Parts_Location : document.getElementById("Parts_Location").value,
+            Parts_Brand : document.getElementById("Parts_Brand").value,
+            Price : document.getElementById("Price").value,
+            Purchased : document.getElementById("Purchased").value,
+        }
 
-infoOne.addEventListener('click', ()=>{
-    const exListOne = document.getElementById("examList");
-    const colorChan = document.getElementById("info1");
+        try {
+            const resParts = await fetch(urlParts, {
+                method: "POST",
+                body: JSON.stringify(dataParts),
+                headers:{
+                    "Content-Type" : "application/json",
+                },
+            });
+            if(!resParts.ok){
+                throw new Error(`Response Status: ${resParts.status}`);
+            }
 
-    if (exListOne.style.display == 'none' && colorChan.style.color == '') {
-        exListOne.style.display = "block"    
-        colorChan.style.color = 'red';    
-    } else {
-        exListOne.style.display = "none"
-        colorChan.style.color = '';
+            const json = await resParts.json();
+            console.log(json);
+        } catch (error) {
+            console.error(error.message);
+        }
     }
 
+    logToGSheets()
 
-})
-
-const infoTwo = document.getElementById("info2");
-infoTwo.addEventListener('click', ()=>{
-    const exListTwo = document.getElementById("examList2");
-    const colorChanTwo = document.getElementById("info2");
-
-    if (exListTwo.style.display == 'none' && colorChanTwo.style.color == '') {
-        exListTwo.style.display = 'block';
-        colorChanTwo.style.color = 'red';
-    } else {
-        exListTwo.style.display = 'none';
-        colorChanTwo.style.color = '';
-    }
-})
-// 
-// 
-// 
- 
-
-// 
-// 
-// 
-// 
-// 
-
+    swal("Successfully Submitted !", "", "Keep on logging!");
+    setTimeout(() => {
+        location.reload();
+     }, 3000);
+ });
