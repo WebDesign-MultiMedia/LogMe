@@ -135,7 +135,7 @@
             width: 130px;
             margin-bottom: 2px;
             display: flex;
-            background-color: transparent;
+            background-color: red;
             border-bottom: black;
             color: black;
             text-decoration: none;
