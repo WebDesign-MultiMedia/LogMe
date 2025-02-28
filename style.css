@@ -2,7 +2,8 @@
 @media only screen and (max-width: 600px) {
     
     body{
-        background-color:black;
+     /*    background-color:lightseagreen; */
+        background-color: rgb(68, 63, 63);
     }
 
 
@@ -39,12 +40,12 @@
         border-radius: 10%;
         height: 60px;
         /* background-color: rgb(26, 25, 25); */
-        border: 1px solid #4484d1;
+        /* border: 1px solid #4484d1; */
         border-left: none;
         border-right: none;
         /* border-top: none;
         border-left: none; */
-
+        background-color: rgb(26, 25, 25);
     }
 
     #logSelect .nav-box{
@@ -56,11 +57,10 @@
         border-radius: 10%;
         height: 60px;
         /* background-color: rgb(26, 25, 25); */
-        border: 1px solid #4484d1;
+        /* border: 1px solid #4484d1; */
         border-left: none;
         border-right: none;
-        /* border-top: none;
-        border-left: none; */
+        background-color: rgb(26, 25, 25);
     }
 
     .fa-garage-car{
@@ -92,6 +92,7 @@
     text-align: left;
     top: 85px;
     background-color: rgb(26, 25, 25);
+    filter: drop-shadow(-20px 20px 15px black);
   }
 
   #formLayer2{
@@ -107,7 +108,7 @@
         text-align: left;
         top: 85px;
         background-color: rgb(26, 25, 25);
-
+        filter: drop-shadow(-20px 20px 15px black);
   }
 
 
@@ -148,7 +149,7 @@
     
         form .user-box label{
             font-size: 1.1em;
-            color: #4484d1;
+            color: lightseagreen;
             position: relative;
 
         }
@@ -182,23 +183,21 @@
     
      #viewBox div:nth-of-type(1){
         flex-grow: 1;
-        border: 1px solid #4484d1;
-        background-color: black;
+        /* border: 1px solid #4484d1; */
         border-radius: 10%;
         border-left: none;
         border-top: none;
         margin-top: 10px;
-
+        background-color: rgb(26, 25, 25);
      }
      #viewBox div:nth-of-type(2){
         flex-grow: 1;
-        border: 1px solid #4484d1;
-        background-color: black;
+        /* border: 1px solid #4484d1; */
         border-radius: 10%;
         border-left: none;
         border-top: none;
         margin-top: 10px;
-
+        background-color: rgb(26, 25, 25);
      }
     
      #viewBox .fa-solid{
@@ -209,6 +208,8 @@
         /* filter: drop-shadow(1px 1px 0px white); */
         padding-bottom: 16px;
         color: lightseagreen;
+        filter: drop-shadow(5px 5px 2px black);
+
     }
 
     a{
@@ -229,10 +230,42 @@
 
         .Dashboard, h2{
             text-align: center;
-            color: #4484d1;
-            font-weight: 300;
+            color: white;
+            text-shadow: 5px 2px 5px black;
+            font-weight: 600;
         }
-     
+
+        #autoShop{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            flex-wrap:wrap;
+        }
+
+        #autoShop h2{
+            text-align: center;
+            color: gold;
+            text-shadow: 5px 2px 5px black;
+            font-weight: 600;
+        }
+
+        #autoShop div{
+            background-color: red;
+        }
+
+        #autoShop div:nth-of-type(1){
+            flex-grow: 1;
+        }
+        #autoShop div:nth-of-type(2){
+            flex-grow: 1;
+        }
+        #autoShop div:nth-of-type(3){
+            flex-grow: 1;
+        }
+        #autoShop div:nth-of-type(4){
+            flex-grow: 1;
+        }
+
         #carSec{
             width: 100%;
             height: 100px;
@@ -240,10 +273,11 @@
             flex-wrap:wrap;
         }
 
+
         #carSec div{
             background-color: rgb(20, 19, 19);
-
         }
+
 
         #carSec div:nth-of-type(1){
             flex-grow: 1; 
@@ -282,9 +316,10 @@
         }
 
         #carIfo > h2{
-            font-size: 1.1em;
+            font-size: 1em;
             text-align: center;
             color: lightseagreen;
+            padding: 3px;
         }
 
         #carIfo #linkIcon{
