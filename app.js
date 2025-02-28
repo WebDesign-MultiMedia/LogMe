@@ -1,4 +1,17 @@
 
+// LOADING
+
+// setInterval(() => {
+    
+//     let reload = document.getElementById('preloader');
+
+//     reload.style.display = 'none';
+
+
+// }, 2500);
+
+
+
 // FORM & LOGS
 
 let carOp = document.querySelectorAll("p");
@@ -75,11 +88,20 @@ submitBtn.addEventListener("click", ()=>{
 
     gSheets()
 
-    swal("Successfully Submitted !", "", "logging....");
+    swal.fire({
+      title: "Log Successfully",
+      icon: "success",
+      draggable: true,
+      timer: 2000,
+      backdrop: "rgba(68, 63, 63, 0.466)",
+      showConfirmButton: false,
+      background: "lightseagreen",
+      color: "white",
+    });
 
     setTimeout(() => {
        location.reload();
-    }, 3000);
+    }, 2000);
     
 });
 
@@ -119,8 +141,19 @@ submitBtn.addEventListener("click", ()=>{
 
     logToGSheets()
 
-    swal("Successfully Submitted !", "", "Keep on logging!");
-    setTimeout(() => {
-        location.reload();
-     }, 3000);
+    swal.fire({
+        title: "Parts are Tracked",
+        icon: "success",
+        draggable: true,
+        timer: 2000,
+        backdrop: "rgba(68, 63, 63, 0.466)",
+        showConfirmButton: false,
+        background: "lightseagreen",
+        color: "white",
+      });
+  
+      setTimeout(() => {
+         location.reload();
+      }, 2000);
+      
  });
