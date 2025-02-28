@@ -229,7 +229,7 @@
         .Dashboard{
             position: relative;
             top: 30em;
-            height: 90vh;
+            height: 80vh;
         }
 
         .Dashboard, h2{
@@ -280,11 +280,9 @@
         }
         #carSec div:nth-of-type(8){
             flex-grow: 1; 
-            width: 40%;
         }
          #carSec div:nth-of-type(9){
             flex-grow: 1; 
-            width: 5%;
         }
         #carSec div:nth-of-type(10){
             flex-grow: 1; 
