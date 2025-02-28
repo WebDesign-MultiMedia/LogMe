@@ -12,6 +12,8 @@
 
 
 
+
+
 // FORM & LOGS
 
 let carOp = document.querySelectorAll("p");
@@ -157,3 +159,25 @@ submitBtn.addEventListener("click", ()=>{
       }, 2000);
       
  });
+
+
+//  VIN AND PLATE SECTION
+
+let searchIcon = document.querySelector('.fa-magnifying-glass');
+
+searchIcon.addEventListener('click', () =>{
+    let searchPopup = document.getElementById('plateAndVinLookUp');
+    searchPopup.style.display = 'inline';
+    setInterval(() => {
+        searchPopup.style.display = 'none';
+    }, 10000);
+})
+
+let closeVinPlateCon = document.querySelector('.fa-x');
+closeVinPlateCon.addEventListener('click', () =>{
+    let closeBinPLateSear = document.getElementById('plateAndVinLookUp');
+
+    closeBinPLateSear.style.display = 'none';
+})
+
+

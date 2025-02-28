@@ -229,7 +229,7 @@
         .Dashboard{
             position: relative;
             top: 30em;
-            height: 500px;
+            height: 90vh;
         }
 
         .Dashboard, h2{
@@ -244,6 +244,7 @@
             height: 100px;
             display: flex;
             flex-wrap:wrap;
+
         }
 
 
@@ -273,19 +274,24 @@
         }
         #carSec div:nth-of-type(6){
             flex-grow: 1; 
-
         }
         #carSec div:nth-of-type(7){
             flex-grow: 1; 
-            border-top: none;
         }
         #carSec div:nth-of-type(8){
             flex-grow: 1; 
-
+            width: 40%;
         }
          #carSec div:nth-of-type(9){
             flex-grow: 1; 
-
+            width: 5%;
+        }
+        #carSec div:nth-of-type(10){
+            flex-grow: 1; 
+    
+        }
+        #carSec div:nth-of-type(11){
+            flex-grow: 1; 
         }
 
         #carIfo > h2{
@@ -323,7 +329,44 @@
             margin-bottom: 2vh;
             }
 
-      
+ 
+            /* PLATE AND VIN SECTION */
+        .plateAndVinLookUp{
+            z-index: 3;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.82);
+            display: none;
+        }
+
+        #PlaVinSec{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        position: relative;
+        top: 100px;
+        padding-bottom: 50px;
+        }
+
+        #PlaVinSec h3{
+            font-size: 1.3em;
+        }
+        #PlaVinSec img{
+            width: 40%;
+        }
+        #PlaVinSec #vinImg{
+            width: 70%;
+        }
+        .fa-x{
+            color: white;
+            font-size: 2em;
+            float: inline-end;
+            position: relative;
+            top: 5%;
+            right: 5%;
+        }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
