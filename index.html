@@ -9,6 +9,10 @@
      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
    <title>Log Me</title>
    <link rel="icon" href="imgs/spare-parts.png" type="image/x-icon">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Limelight&family=Oi&display=swap" rel="stylesheet">
 </head>
 <body id="body">
 
@@ -71,8 +75,52 @@
                         <p id="carOp"><i class="fa-sharp-duotone fa-solid fa-garage-car"></i></p>
                     </div>
                     <div class="nav-box">
-                        <p id="partOp"><i class="fa-sharp-duotone fa-solid fa-screwdriver-wrench"></i></p>
+                        <p id="partOp"><i class="fa-solid fa-gears"></i></p>
                     </div>
+                    <div class="nav-box">
+                    <a id="gSheetLog" href="https://docs.google.com/spreadsheets/d/1FPooMdcLWOJo0p1TcQNhE72wvkp-_Ysw3lRYblO0GCQ/edit?usp=sharing">  <i class="fa-solid fa-file-spreadsheet"></i></a>
+                </div>  
+            </div>
+
+            <div id="formTitle">
+                <div id="mainRepairTitle">
+                      <ul>
+                    <li>M</li>
+                    <li>A</li>
+                    <li>I</li>
+                    <li>N</li>
+                    <li>T</li>
+                    <li>E</li>
+                    <li>N</li>
+                    <li>A</li>
+                    <li>N</li>
+                    <li>C</li>
+                    <li>E</li>
+                    <li></li>
+                    <li><i class="fa-solid fa-hyphen"></i></li>
+                    <li>R</li>
+                    <li>E</li>
+                    <li>P</li>
+                    <li>A</li>
+                    <li>I</li>
+                    <li>R</li>
+                </ul> 
+                </div>
+                <div id="autoPartsTitle">
+                    <ul>
+                        <li>A</li>
+                        <li>U</li>
+                        <li>T</li>
+                        <li>O</li>
+                        <li><i class="fa-solid fa-hyphen"></i></li>
+                        <li>P</li>
+                        <li>A</li>
+                        <li>R</li>
+                        <li>T</li>
+                        <li>S</li>
+                        <li></li>
+                    </ul>
+                </div>
             </div>
 
             <div id="formLayer">
@@ -98,30 +146,34 @@
                     <label for="Parts">Parts:</label>
                     <select name="Parts" id="Parts"  placeholder="Maintenance or Repair" >
                         <option value="" id="RM"></option>
-                        <option value="Engine Oil & Filter">Engine Oil & Filter</option>
+                        <option value="Engine Oil and Filter">Engine Oil & Filter</option>
                         <option value="Tire Rotation">Tire Rotation</option>
                         <option value="Tire Alignment">Tire Alignment</option>
-                        <option value="Brake Pads & Rotor">Brake Pads & Rotor</option>
+                        <option value="Brake Pads and Rotor">Brake Pads & Rotor</option>
                         <option value="Brake Pads">Brake Pads</option>
                         <option value="Rotors">Rotors</option>
                         <option value="Air Filter">Air Filter</option>
                         <option value="Cabin Air Filter">Cabin Air Filter</option>
                         <option value="Transmission Fluid">Transmission Fluid</option>
+                        <option value="Steering Pump Fluid">Steering Pump Fluid</option>
+                        <option value="Engine Coolant Fluid">Engine Coolant Fluid</option>
+                        <option value="Wheel Speed Sensors">wheel Speed Sensor</option>
                         <option value="Coolant Flush">Coolant Flush</option>
                         <option value="Battery">Battery</option>
                         <option value="Windshield Wipers">Windshield Wipers</option>
                         <option value="Headlights bulb">Headlights bulb</option>            
                         <option value="Taillights bulb">Taillights bulb</option>
-                          
-                        <option value="" id="MR">**Major Repairs**</option>
                         <option value="Timing belt/Chain*">Timing belt/Chain</option>
                         <option value="Water Pump*">Water Pump</option>
-                        <option value="Water_Pump_TimingBelt_kit*">Water Pump & Timing Belt Kit</option>
-                     
+                        <option value="Water_Pump_TimingBelt_kit*">Water Pump & Timing Belt Kit</option>                
                         <option value="Shocks">Shocks</option>
                         <option value="Struts">Struts</option>
                         <option value="Control Arms">Control Arms</option>
                         <option value="Stablizer Links">Stablizer Links</option>
+                        <option value="Control Solenoid">Control Solenoid</option>
+                        <option value="Shift Solenoid">Shift Solenoid</option>
+                        <option value="Oxygen Sensors">Oxygen Sensors</option>
+                        <option value=""></option>
             
                         <option value="Mufflers">Mufflers</option>
                         <option value="Catalytic Converter">Catalytic Converter</option>
@@ -143,7 +195,6 @@
                         <option value="Engine Mounts">Engine Mounts</option>
                         <option value="Alternator">Alternator</option>
                         <option value="Starter">Starter</option>
-                        <option value="Control Solenoid">Control Solenoid</option>
                         <option value="Transmission Mounts">Transmission Mounts</option>
                         <option value="Engine Mounts">Engine Mounts</option>
                         <option value="Windshield">Windshield</option>
@@ -164,6 +215,9 @@
                         <option>Transmission</option>
                     </select>
                     </div>
+
+                    <div id="optinal"> 
+                        <div id="clsOpn">
                     <div class="user-box">
                     <label for="Service_Provider">Service</label>
                     <input type="text" id="Service_Provider" name="Service_Provider" placeholder="Who did the job ?">
@@ -180,6 +234,12 @@
                     <label for="Notes_Issues">Notes/Issues</label>
                     <input type="text" id="Notes_Issues" name="Cost" placeholder="Issues/ Concerns/ Reminders">
                     </div>
+                        </div>
+                   
+                    </div>
+                 
+
+
                     <button type="submit" id="btn" class="" form="">Submit</button>                    
                 </form>
             </div>
@@ -216,17 +276,14 @@
             </div>
 
 
-        <div class="ViewLog">
+        <!-- <div class="ViewLog">
             <div id="viewBox">
                 <div id="mediaOp">
                     <a href="https://docs.google.com/spreadsheets/d/1FPooMdcLWOJo0p1TcQNhE72wvkp-_Ysw3lRYblO0GCQ/edit?usp=sharing" id="gSheetLog">  <i class="fa-solid fa-file-spreadsheet"></i></a>
-                    <!-- <a href="https://docs.google.com/spreadsheets/d/1FPooMdcLWOJo0p1TcQNhE72wvkp-_Ysw3lRYblO0GCQ/edit?gid=615213625#gid=615213625" id="gSheetLog">  <i class="fa-solid fa-file-spreadsheet"></i></a> -->
-                </div> 
-                <div id="mediaOp">
-                    <a href="https://docs.google.com/spreadsheets/d/1FPooMdcLWOJo0p1TcQNhE72wvkp-_Ysw3lRYblO0GCQ/edit?gid=615213625#gid=615213625" id="gSheetLog"> <i class="fa-duotone fa-solid fa-car-wrench"></i></a>
-                </div>             
+                     <a href="https://docs.google.com/spreadsheets/d/1FPooMdcLWOJo0p1TcQNhE72wvkp-_Ysw3lRYblO0GCQ/edit?gid=615213625#gid=615213625" id="gSheetLog">  <i class="fa-solid fa-file-spreadsheet"></i></a> 
+                </div>          
             </div>
-        </div>
+        </div> -->
 
 
         </div>
@@ -273,14 +330,14 @@
 
             </div>
             <div id="carIfo" >
-                <h2>Repair & Workshop Manuals</h2>
-                <a href="https://www.wikihow.com/Main-Page"><i class="fa-duotone fa-solid fa-book-open-cover" id="linkIcon"></i> </a>
+                <h2>Repair and Workshop Manuals</h2>
+                <a href="https://us.haynes.com/"><i class="fa-duotone fa-solid fa-book-open-cover" id="linkIcon"></i> </a>
 
             </div>
-            <div id="carIfo" >
+            <!-- <div id="carIfo" >
                 <h2>Liscense Plate & Vin Lookup</h2>
                 <i class="fa-duotone fa-solid fa-magnifying-glass" id="linkIcon"></i> 
-            </div>
+            </div> -->
             <div id="carIfo">
                 <h2>FIXD OBD2 Scan [Beginners]</h2>
                 <a href="https://us.haynes.com/"><img src="https://cdn.prod.website-files.com/5f76314c5145773d1027bdad/5f76314cde4c68dc7bcac5c4_FIXD_Logo_FullColor.png" id="linkIconScanners" alt=""></i></a>

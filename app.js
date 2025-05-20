@@ -1,24 +1,9 @@
 
-// LOADING
-
-// setInterval(() => {
-    
-//     let reload = document.getElementById('preloader');
-
-//     reload.style.display = 'none';
-
-
-// }, 2500);
-
-
-
-
 
 // FORM & LOGS
 
 let carOp = document.querySelectorAll("p");
  carOp.forEach(el => {
-    el.style.fontSize = '1.5em'
     el.style.textAlign = 'center'
  });
 
@@ -29,19 +14,25 @@ let carOp = document.querySelectorAll("p");
  let formCarLog = document.getElementById('formLayer')
  let formPartsLog = document.getElementById('formLayer2')
 
+ const mainRepair = document.getElementById('mainRepairTitle')
+ const autoParts = document.getElementById('autoPartsTitle')
+
+
  partsOption.addEventListener('click', () =>{
         formCarLog.style.display = 'none';
         formPartsLog.style.display = 'block';
         formPartsLog.style.position = 'absolute';
         formPartsLog.style.zIndex= '1';
-
+        mainRepair.style.display = 'none';
+        autoParts.style.display = 'block';
  })
 
  carOption.addEventListener('click', () =>{
         formPartsLog.style.display = 'none';
         formCarLog.style.display = 'block';
         formCarLog.style.zIndex= '1';
-
+        mainRepair.style.display = 'block';
+        autoParts.style.display = 'none';
  })
 
 
